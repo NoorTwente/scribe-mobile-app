@@ -1,0 +1,226 @@
+.whiteBg{
+    position: absolute;
+    width: 100%; //428px
+    height: 100%; //926px
+
+    background: #FFFFFF;
+}
+
+.topColour{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 78.44%;
+
+    background: #4931E8;
+}
+
+.content-background{
+    position: absolute;
+    left: 2.1%;
+    right: 2.1%;
+    top: 11.5%;
+    bottom: 25%;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+  }
+
+.loginButton{
+    position: absolute;
+    
+
+    background:#00C9D3;
+    width: 68%;
+    height: 6.1%;
+    left: 16%;
+    top: 65%;
+
+    // background: #1127F1;
+    border-radius: 30px;
+}
+
+.loginText{
+    position: absolute;
+    left: 35.04%;
+    right: 34.68%;
+    top: 67%;
+    bottom: 30.74%;
+
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+
+    text-align: center;
+    letter-spacing: 1.18px;
+
+    color: #FFFFFF;
+}
+
+.welcomeText{
+    position: absolute;
+    left: 8.2%;
+    // right: 57.69%;
+    top: 13.61%;
+    bottom: 80.78%;
+
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 52px;
+    /* identical to box height */
+
+
+    color: #353535;
+}
+
+.signInText{
+    /* Let’s sign you in */
+
+
+    position: absolute;
+    left: 8.2%;
+    // right: 54.18%;
+    top: 18.47%;
+    bottom: 77.54%;
+
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    /* identical to box height */
+
+
+    color: #353535;
+}
+
+.emailField{
+    position: absolute;
+    left: 4.81%;
+    right: 4.08%;
+    top: 33.26%;
+    bottom: 57.61%;
+    background-image: url("../../assets/icon/EmailBox.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.text{
+    /* Email */
+
+    position: absolute;
+    left: 13%;
+    // right: 86.81%;
+    top: 32.15%;
+    bottom: 73.58%;
+
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+
+    color: #353535;
+
+}
+
+.inputarea{
+    position: absolute;
+}
+
+.passwordField{
+    position: absolute;
+    left: 3.97%;
+    right: 4.92%;
+    top: 45.89%;
+    bottom: 44.99%;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.showButton{
+        /* ✏️ Headline 8 */
+
+
+    position: absolute;
+    left: 72.66%;
+    right: 4.84%;
+    top: 48.16%;
+    bottom: 49.21%;
+
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    /* or 160% */
+
+    text-align: center;
+    letter-spacing: 1.18px;
+
+    color: #1127F1;
+}
+
+.topLogo{
+    position: absolute;
+    left: 34.81%;
+    right: 34.91%;
+    top: 4.97%;
+    bottom: 91.91%;
+
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+
+    text-align: center;
+    letter-spacing: 1.18px;
+
+    color: #FFFFFF;
+}
+
+.bottomColor{
+    /* Vector */
+
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 80.99%;
+   
+}
+
+.bottomLogo{
+    /* ✏️ Headline 13 */
+
+
+    position: absolute;
+    left: 35.05%;
+    right: 34.68%;
+    top: 81%;
+    bottom: 0%;
+}
+
+
+ion-input.custom {
+    top:0%;
+    // --background: #ffffff;
+    --color: rgb(73, 73, 73);
+    // --placeholder-color: rgb(100, 100, 100);
+    // --placeholder-opacity: .8;
+  
+    // --padding-bottom: 30px;
+    // --padding-end: 20px;
+    --padding-start: 10px;
+    --padding-top: 35px;
+    // border-radius: 4px;
+  }
+

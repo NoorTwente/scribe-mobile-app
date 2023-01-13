@@ -1,0 +1,107 @@
+<ion-content>
+  <div class="background"></div>
+  <div class="topcolor"></div>
+  <div class="content-bg"></div>
+  <div class="logo">
+    <img src="../../assets/icon/ScriBe_topLogo.svg" style="width : 100% ; height : 100%">
+  </div>
+  <div (click)="logout()" class="logoutButton">
+    <ion-icon name="log-out-outline"></ion-icon>
+  </div>
+
+  <!-- Wriiten Text on the screen -->
+  <div *ngIf="!isRecording && !play" class="recordingText">New Recording</div>
+  <div *ngIf="!isRecording && !play" class="recordingText3">Record a new audio file:</div>
+  <div *ngIf="!isRecording && !play" class="recordingText2">Tap the button to start recording</div>
+
+  <div *ngIf="isRecording && !isPaused && !play" class="recordingText">Recording...</div>
+  <div *ngIf="isRecording && isPaused && !play" class="recordingText">Recording Paused</div>
+  <div *ngIf="!isRecording && !isPaused && play" class="recordingTextFile">{{fileRecorded.getName()}}</div> 
+  <!-- Wriiten Text on the screen -->
+
+  <!-- Mic -->
+  <div *ngIf="!isRecording && !play" (click)="startRecording()" class="mic">
+    <img src="../../assets/icon/microphone_StartRecording_Icon.svg" style="width : 100% ; height : 100%" >
+  </div>
+  <!-- Mic -->
+
+
+  <div (click)="pauseRecording()"  *ngIf="isRecording && !isPaused && !play" class="recordingSpectrum">
+    <img src="../../assets/icon/RecordingButton_Animated.svg" style="width : 100% ; height : 100%">
+  </div>
+  <div (click)="resumeRecording()" *ngIf="isRecording && isPaused && !play" class="mic">
+    <img src="../../assets/icon/microphone_StartRecording_Icon.svg"  style="width : 100% ; height : 100%" ng-click="nextpage()" >
+  </div>
+  <div *ngFor="let entry of entries" class="timer">
+    <span *ngIf="getElapsedTime(entry) as elapsed" >
+      <h1>{{elapsed}}</h1>
+    </span>
+  </div>
+  <span *ngIf="isPaused" class="timer">
+    <h1> {{timeDisplayOnPause}} </h1>
+  </span>
+  <div (click)="stopRecording()"  *ngIf="isRecording && !play" class="stopButton">
+    <img src="../../assets/icon/Recording_DoneButtonOutline.svg" style="width : 100% ; height : 100%">
+    <div  class="stopText">Done</div>
+  </div>
+
+  <div class="playIcon" *ngIf="!isRecording && !isPaused && play">
+    <img src="../../assets/icon/musical-notes-outline.svg" style="width : 70% ; height : 70%">
+  </div>
+  <div class="succesfullySavedText" *ngIf="!isRecording && !isPaused && play">Your File has been succesfully recorded</div>
+  <div (click)="playFile()" *ngIf="!isRecording && !isPaused && play && !isPlaying" class="pauseMic">
+    <ion-icon name="play-circle-outline"></ion-icon>
+  </div>
+  <div (click)="pauseFile()" *ngIf="!isRecording && !isPaused && play && isPlaying && !audioPaused" class="pauseMic">
+    <ion-icon name="pause-circle-outline"></ion-icon>
+  </div>
+  <div (click)="resumeFile()" *ngIf="!isRecording && !isPaused && play && isPlaying && audioPaused" class="pauseMic">
+    <ion-icon name="play-circle-outline"></ion-icon>
+  </div>
+  <div (click)="playFile()" *ngIf="!isRecording && !isPaused && play && !isPlaying" class="recordText">Play</div>
+  <div (click)="pauseFile()" *ngIf="!isRecording && !isPaused && play && isPlaying && !audioPaused" class="recordText">Pause</div>
+  <div (click)="resumeFile()"  *ngIf="!isRecording && !isPaused && play && isPlaying && audioPaused" class="recordText">Play</div>
+
+  <div (click)="openPopUpDelete()" class="deleteFile" *ngIf="!isRecording && !isPaused && play">
+    <ion-icon name="trash-outline"></ion-icon>
+  </div>
+  <div (click)="openPopUpDelete()" class="deleteText" *ngIf="!isRecording && !isPaused && play">Delete</div>
+
+  <div (click)="recordNewFile()" class="recordNew">
+    <ion-icon name="mic-outline" *ngIf="!isRecording && !isPaused && play"></ion-icon>
+  </div>
+  <div (click)="recordNewFile()"  class="recordNewText" *ngIf="!isRecording && !isPaused && play">Record New File</div>
+
+  <div *ngIf="!isRecording && !isPaused && play" class="uploadButton"></div>
+  <div (click)="uploadAudio()" class="uploadText" *ngIf="!isRecording && !isPaused && play">Upload To The Cloud</div>
+
+  <!-- Pop up of delete -->
+  <div *ngIf="popUpDelete" class="deletePopUp">Do you want to delete this file?
+    <div (click)="recordAgain()" class="yes">
+      <ion-icon name="checkmark-circle-outline"></ion-icon>
+    </div>
+    <div (click)="cancelDelete()"  class="no">
+      <ion-icon name="close-circle-outline"></ion-icon>
+    </div>
+  </div>
+
+
+  <!-- Taskbar -->
+  <div class="taskbar"></div>
+  <div (click)="navigateToHomePage()" class="homeIcon">
+    <img src="../../assets/icon/taskbar_HomeUnselected_Icon.svg" style="width : 100% ; height : 100%">
+  </div>
+  <div (click)="navigateToRecordingPage()"  class="newAudioIcon">
+    <img src="../../assets/icon/taskbar_newFileSelected_Icon.svg" style="width : 100% ; height : 100%">
+  </div>
+  <div (click)="navigateTofiles()" class="recentFilesIcon">
+    <img src="../../assets/icon/taskbar_recentFiles_Icon.svg" style="width : 100% ; height : 100%">
+  </div>
+  <div (click)="navigateToInfoPage()" class="infoIcon">
+    <img src="../../assets/icon/taskbar_info_Icon.svg" style="width : 100% ; height : 100%">
+  </div>
+  <div class="line">
+    <img src="../../assets/icon/taskbar_selectionBar_icon.svg" style="width : 100% ; height : 100%">
+  </div>
+  <!-- Taskbar -->
+</ion-content>

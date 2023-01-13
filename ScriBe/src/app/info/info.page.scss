@@ -1,0 +1,261 @@
+.background{
+    /* Home Page */
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    background: #FFFFFF;
+}
+
+.topcolor{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 78.44%;
+
+    background: #4931E8;
+}
+
+.content-bg{
+    /* Rectangle 2 */
+
+    position: absolute;
+    left: 2.1%;
+    right: 2.1%;
+    top: 11.5%;
+    bottom: 13.34%;
+  
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.helpText{
+        /* ✏️ Headline 5 */
+
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  top: 15.98%;
+  bottom: 78.4%;
+  
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 52px;
+  /* identical to box height */
+  
+  text-align: center;
+  
+  color: #353535;
+}
+
+.logo{
+    
+    position: absolute;
+    left: 34.81%;
+    right: 34.91%;
+    top: 4.97%;
+    bottom: 91.91%;
+
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+
+    text-align: center;
+    letter-spacing: 1.18px;
+
+    color: #FFFFFF;
+}
+
+.taskbar{
+    /* Taskbar */
+
+
+    position: absolute;
+    left: -2.1%;
+    right: -3.04%;
+    top: 90.28%;
+    bottom: -1.19%;
+
+    background: #FFFFFF;
+    box-shadow: 0px -4px 25px rgba(0, 0, 0, 0.25);
+}
+
+.homeIcon{
+    position: absolute;
+    left: 10.51%;
+    right: 81.07%;
+    top: 92.44%;
+     bottom: 3.02%;
+}
+
+
+.newAudioIcon{
+    position: absolute;
+    left: 32.71%;
+    right: 57.48%;
+    top: 92.44%;
+    bottom: 3.02%;
+
+}
+
+.recentFilesIcon{
+    position: absolute;
+    left: 46%;
+    right: 25%;
+    top: 92.44%;
+    bottom: 3.02%;
+
+}
+
+.infoIcon{
+    position: absolute;
+    left: 80.84%;
+    right: 10.75%;
+    top: 92.44%;
+    bottom: 3.02%;
+
+}
+
+.line{
+    position: absolute;
+    left: 82.48%;
+    right: 12.54%;
+    top: 96%;
+    bottom: 2.74%;
+}
+
+.dropDownButton1{
+    position: absolute;
+    left: 14.72%;
+    right: 80.37%;
+    top: 28.51%;
+    bottom: 69.65%;
+    // transform: rotate(90deg);
+}
+
+.text1{
+        
+    position: absolute;
+    left: 20%;
+    right: 5.37%;
+    top: 28%;
+    bottom: 69.11%;
+
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+
+    letter-spacing: 1.18px;
+
+    color: #000000;
+    }
+
+.dropDownButton2{
+    position: absolute;
+    left: 14.95%;
+    right: 80.14%;
+    top: 34.77%;
+    bottom: 63.39%; 
+}
+
+.text2{
+    /* Issues with uploading? */
+
+
+    position: absolute;
+    left: 20%;
+    right: 5.14%;
+    top: 34.3%;
+    bottom: 62.96%;
+
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+
+    letter-spacing: 1.18px;
+
+    color: #000000;
+}
+
+.dropDownButton3{
+    position: absolute;
+    left: 15.19%;
+    right: 79.91%;
+    top: 40.6%;
+    bottom: 57.56%;
+}
+
+.text3{
+    /* Login Issues? */
+
+
+    position: absolute;
+    left: 20%;
+    right: 5.14%;
+    top: 40%;
+    bottom: 57.02%;
+
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+
+    letter-spacing: 1.18px;
+
+    color: #000000;
+
+}
+
+.dropDownButton4{
+    position: absolute;
+    left: 15.19%;
+    right: 79.91%;
+    top: 46.98%;
+    bottom: 51.19%;
+}
+
+.text4{
+    /* Any suggestions? */
+
+
+    position: absolute;
+    left: 20%;
+    right: 5.37%;
+    top: 46.5%;
+    bottom: 50.65%;
+
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+
+    letter-spacing: 1.18px;
+
+    color: #000000;
+
+}
+
+.logoutButton{
+    position: absolute;
+    left: 86.92%;
+    right: 8.41%;
+    top: 5.4%;
+    bottom: 92.44%;
+    font-size: 25px;
+}

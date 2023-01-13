@@ -1,0 +1,93 @@
+
+<ion-content>
+  <div class="background"></div>
+  <div class="topcolor"></div>
+  <div class="content-bg"></div>
+  <div class="logo">
+    <img src="../../assets/icon/ScriBe_topLogo.svg" style="width : 100% ; height : 100%">
+  </div>
+  <div (click)="logout()" class="logoutButton">
+    <ion-icon name="log-out-outline"></ion-icon>
+  </div>
+
+  <div *ngIf="!audioPlayer" class="recordingText">All Recordings</div>
+  <div *ngIf="!audioPlayer" class="content-list">
+      <div  class="scroller">
+        <ion-list class="content-text-background">
+
+          <ion-item *ngFor="let f of getFileNames()" detail="false" color="rgba(196, 196, 196, 0.5)">
+            <ion-checkbox *ngIf="displayUploadBoxes" (click)="selectTheFile(f.name)" slot="start">
+            </ion-checkbox>
+            <div class="fileName">{{ f.name }}</div> 
+            <img *ngIf="!displayUploadBoxes" (click)="startAudioPlayer(f.name)" slot="start" src="../../assets/playButton.svg" style="width : 5% ; height : 5%">
+            <img *ngIf="!displayUploadBoxes" (click)="fileSelectedToDelete(f.name)" slot="end"  src="../../assets/deleteButton.svg" style="width : 23% ; height : 23%">   
+          </ion-item>   
+          <ion-item  *ngFor="let f of fileNamesDatabase" detail="false" color="rgba(196, 196, 196, 0.5)">
+            <div class="fileNameServer">{{ f }}</div> 
+            <img  slot="end"  src="../../assets/icon/cloud-done-outline.svg" style="width : 23% ; height : 23%">  
+          </ion-item>      
+      </ion-list> 
+      </div>  
+  </div>
+
+  <div *ngIf="!displayUploadBoxes && !audioPlayer" (click)="displayTheBoxes()" class="fileSelectorBox"></div>
+  <div *ngIf="!displayUploadBoxes && !audioPlayer" (click)="displayTheBoxes()"  class="fileSelectorText">Select Files to Upload</div>
+  <div *ngIf="displayUploadBoxes && !audioPlayer" (click)="uploadFiles()" class="fileSelectorBox"></div>
+  <div *ngIf="displayUploadBoxes && !audioPlayer" (click)="uploadFiles()" class="fileSelectorText">Click to Upload it to Cloud</div>
+
+  <div *ngIf="audioPlayer">
+    <div class="recordingText2">{{playTheFile}}</div>
+    <div class="rangeBarPosition">
+      <ion-range #range [(ngModel)]="progress" max="100"  (touchstart)="pauseAudioFile()" (touchend)="seek()" (mousedown)="pauseAudioFile()"  (mouseup)="seek()"></ion-range>
+    </div>
+    <div class="timeDisplay">{{audioPlayTimer()}}</div>
+    <div (click)="forward()" class="forwardPlaybackButton">
+      <img src="../../assets/icon/Audio_forward.svg" style="width : 100% ; height : 100%">
+    </div>
+    <div (click)="forward()" class="forwardText">
+      <img src="../../assets/icon/5.svg" style="width : 35% ; height : 35%">
+    </div>
+    <div (click)="reverse()" class="backwardPlaybackButton">
+      <img src="../../assets/icon/Audio_back.svg" style="width : 100% ; height : 100%">
+    </div>
+    <div (click)="reverse()" class="backwardText">
+      <img src="../../assets/icon/5.svg" style="width : 35% ; height : 35%">
+    </div>
+    <div *ngIf="!isPaused" (click)="pauseAudioFile()" class="pauseButton">
+      <img src="../../assets/pause.svg" style="width : 70% ; height : 70%">
+      <div class="circle"></div>
+    </div>
+    <div *ngIf="isPaused" (click)="resumeAudioFile()" class="pauseButton">
+      <img src="../../assets/playButton.svg" style="width : 70% ; height : 70%">
+    </div>
+    <div class="closeButton">
+      <ion-icon (click)="stopAudioPlayer()" name="close-circle-outline"></ion-icon>
+    </div>
+  </div>
+
+
+  <div *ngIf="popUpDelete" class="deletePopUp">Do you want to delete this file?
+    <div (click)="deleteAudioFileLocal()" class="yes">
+      <ion-icon name="checkmark-circle-outline"></ion-icon>
+    </div>
+    <div (click)="cancelDelete()"  class="no">
+      <ion-icon name="close-circle-outline"></ion-icon>
+    </div>
+  </div>
+
+
+  <div class="taskbar"></div>
+  <div (click)="navigateToHomePage()" class="homeIcon">
+    <img src="../../assets/icon/taskbar_HomeUnselected_Icon.svg" style="width : 100% ; height : 100%" >
+  </div>
+  <div (click)="navigateToRecordingPage()"  class="newAudioIcon">
+    <img src="../../assets/icon/taskbar_newFile_Icon.svg" style="width : 100% ; height : 100%" >
+  </div>
+  <div class="recentFilesIcon">
+    <img src="../../assets/icon/taskbar_recentFilesSelected_Icon.svg" style="width : 100% ; height : 100%" >
+  </div>
+  <div (click)="navigateToInfoPage()" class="infoIcon">
+    <img src="../../assets/icon/taskbar_info_Icon.svg" style="width : 100% ; height : 100%">
+  </div>
+</ion-content>
+

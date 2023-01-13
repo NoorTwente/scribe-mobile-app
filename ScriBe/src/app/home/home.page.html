@@ -1,0 +1,43 @@
+ <ion-content>
+  <div class="background"></div>
+  <div class="topcolor"></div>
+  <div class="content-bg"></div>
+  <div class="logo">
+    <img src="../../assets/icon/ScriBe_topLogo.svg" style="width : 100% ; height : 100%">
+  </div>
+  <div (click)="logout()" class="logoutButton">
+    <ion-icon name="log-out-outline"></ion-icon>
+  </div>
+
+  <div class="welcomeText">Welcome to ScriBe</div>
+  <div class="welcomeText2">User!</div>
+  <div (click)="navigateToRecordingPage()" class="newAudioButton">
+    <img src="../../assets/icon/createNewFile.svg" style="width : 65% ; height : 65%">
+  </div>
+  <div (click)="navigateToRecordingPage()" class="audioText">Create New Audio File</div>
+  <div (click)="navigateToFilesPage()" class="recentFiles">
+    <img src="../../assets/icon/recentFiles.svg" style="width : 65% ; height : 65%">
+  </div>
+  <div (click)="navigateToFilesPage()" class="recentFilesText">Recent Files</div>
+  
+  
+ <!-- Taskbar -->
+
+  <div class="taskbar"></div>
+  <div class="homeIcon">
+    <img src="../../assets/icon/taskbar_Home_Icon.svg" style="width : 100% ; height : 100%">
+  </div>
+  <div (click)="navigateToRecordingPage()"  class="newAudioIcon">
+    <img src="../../assets/icon/taskbar_newFile_Icon.svg" style="width : 100% ; height : 100%">
+  </div>
+  <div (click)="navigateToFilesPage()" class="recentFilesIcon">
+    <img src="../../assets/icon/taskbar_recentFiles_Icon.svg" style="width : 100% ; height : 100%">
+  </div>
+  <div (click)="navigateToInfoPage()" class="infoIcon">
+    <img src="../../assets/icon/taskbar_info_Icon.svg" style="width : 100% ; height : 100%">
+  </div>
+  <div class="line">
+    <img src="../../assets/icon/taskbar_selectionBar_icon.svg" style="width : 100% ; height : 100%">
+  </div>
+ </ion-content>
+ 

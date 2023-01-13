@@ -1,0 +1,50 @@
+
+<ion-content>
+  <div class="background"></div>
+  <div class="topcolor"></div>
+  <div class="content-bg"></div>
+  <div class="logo">
+    <img src="../../assets/icon/ScriBe_topLogo.svg" style="width : 100% ; height : 100%">
+  </div>
+  <div (click)="logout()" class="logoutButton">
+    <ion-icon name="log-out-outline"></ion-icon>
+  </div>
+  
+  <div class="helpText">Need Any Help?</div>
+    
+    <div class="dropDownButton1">
+      <img src="../../assets/dropdown.svg" style="width : 100% ; height : 100%"  >
+    </div>
+    <div class="text1">Trouble recording audio?</div>
+    <div class="dropDownButton2">
+      <img src="../../assets/dropdown.svg" style="width : 100% ; height : 100%"  >
+    </div>
+    <div class="text2">Issues with uploading?</div>
+    <div class="dropDownButton3">
+      <img src="../../assets/dropdown.svg" style="width : 100% ; height : 100%" >
+    </div>
+    <div class="text3">Login Issues?</div>
+    <div class="dropDownButton4">
+      <img src="../../assets/dropdown.svg" style="width : 100% ; height : 100%" >
+    </div>
+    <div class="text4">Any suggestions?</div>
+
+
+
+  <div class="taskbar"></div>
+  <div (click)="navigateToHomePage()" class="homeIcon">
+    <img src="../../assets/icon/taskbar_HomeUnselected_Icon.svg" style="width : 100% ; height : 100%">
+  </div>
+  <div (click)="navigateToRecordingPage()"  class="newAudioIcon">
+    <img src="../../assets/icon/taskbar_newFile_Icon.svg" style="width : 100% ; height : 100%">
+  </div>
+  <div (click)="navigateToFilesPage()" class="recentFilesIcon">
+    <img src="../../assets/icon/taskbar_recentFiles_Icon.svg" style="width : 100% ; height : 100%" >
+  </div>
+  <div class="infoIcon">
+    <img src="../../assets/icon/taskbar_infoSelected_icon.svg" style="width : 100% ; height : 100%" >
+  </div>
+  <div class="line">
+    <img src="../../assets/icon/taskbar_selectionBar_icon.svg" style="width : 100% ; height : 100%">
+  </div>
+</ion-content>

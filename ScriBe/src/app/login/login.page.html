@@ -1,0 +1,27 @@
+
+
+<ion-content>
+  <div class="whiteBg"></div>
+  <div class="topColour"></div>
+  <div class="topLogo">
+    <img src="../../assets/icon/ScriBe_topLogo.svg" style="width : 100% ; height : 100%">
+  </div>
+  <div class="bottomColor">
+    <img src="../../assets/icon/bottomColor.svg" style="width : 100% ; height : 100%">
+  </div>
+  <div class="bottomLogo">
+    <img src="../../assets/icon/ScriBe_bottomLogo.svg" style="width : 100% ; height : 100%">
+  </div>
+  <div class="content-background"></div>
+  <ion-button (click)="pressedLogin()" fill ="clear" class="loginButton">
+  </ion-button>
+  <div (click)="pressedLogin()" class="loginText">Login</div>
+  <div class="welcomeText">Welcome!</div>
+  <div class="signInText">Let’s Sign you in</div>
+  <div class="emailField">
+    <ion-input inputmode="email" placeholder="Provide your UT email to sign in" class="custom" [(ngModel)]="email"></ion-input>
+  </div>
+  <!-- <div class="emailField">
+    <ion-input placeholder="Provide your UT email to sign in" class="custom" [(ngModel)]="email"></ion-input>
+  </div> -->
+</ion-content>

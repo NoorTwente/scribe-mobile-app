@@ -1,0 +1,567 @@
+.background{
+  /* Home Page */
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  background: #FFFFFF;
+}
+
+.topcolor{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 78.44%;
+
+  background: #4931E8;
+  
+}
+
+.content-bg{
+  /* Rectangle 2 */
+
+  position: absolute;
+  left: 2.1%;
+  right: 2.1%;
+  top: 11.5%;
+  bottom: 13.34%;
+
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+
+.taskbar{
+  /* Taskbar */
+
+
+  position: absolute;
+  left: -2.1%;
+  right: -3.04%;
+  top: 90.28%;
+  bottom: -1.19%;
+
+  background: #FFFFFF;
+  box-shadow: 0px -4px 25px rgba(0, 0, 0, 0.25);
+}
+
+.homeIcon{
+  position: absolute;
+  left: 10.51%;
+  right: 81.07%;
+  top: 92.44%;
+  bottom: 3.02%;
+}
+
+
+.newAudioIcon{
+  position: absolute;
+  left: 32.71%;
+  right: 57.48%;
+  top: 92.44%;
+  bottom: 3.02%;
+
+}
+
+.recentFilesIcon{
+  position: absolute;
+  left: 46%;
+  right: 25%;
+  top: 92.44%;
+  bottom: 3.02%;
+
+}
+
+.infoIcon{
+  position: absolute;
+  left: 78%;
+  top: 92.44%;
+  bottom: 3.02%;
+
+}
+
+.logo{
+  
+  position: absolute;
+  left: 34.81%;
+  right: 34.91%;
+  top: 4.97%;
+  bottom: 91.91%;
+
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+
+  text-align: center;
+  letter-spacing: 1.18px;
+
+  color: #FFFFFF;
+}
+
+
+.line{
+  position: absolute;
+  left: 35.05%;
+  right: 59.97%;
+  top: 96%;
+}
+
+
+.recordingText{
+  /* ✏️ Headline 5 */
+
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  top: 15.98%;
+  bottom: 78.4%;
+  
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 52px;
+  /* identical to box height */
+  
+  text-align: center;
+  
+  color: #353535;
+
+}
+
+.recordingTextFile{
+  /* ✏️ Headline 5 */
+
+position: absolute;
+left: 15%;
+right: 15%;
+top: 15.98%;
+bottom: 78.4%;
+
+font-family: 'Titillium Web';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 52px;
+/* identical to box height */
+
+text-align: center;
+
+color: #353535;
+}
+
+.recordingText3{
+    /* Create new audio file */
+
+
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  top: 24.08%;
+  bottom: 71.92%;
+
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #353535;
+
+}
+
+.mic{
+  /* voice-recorder 1 */
+
+
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  top: 39%;
+
+}
+
+.recordingSpectrum{
+  /* spectrum 1 */
+
+
+  position: absolute;
+  left: 24.6%;
+  right: 24.6%;
+  top: 36%;
+
+}
+
+.playIcon{
+  /* spectrum 1 */
+
+
+  position: absolute;
+  left: 28%;
+  right: 20%;
+  top: 30%;
+
+}
+
+
+.recordingText2{
+/* Create new audio file */
+
+
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 65.23%;
+  bottom: 30.78%;
+
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #969696;
+
+}
+
+.pauseButton{
+  /* Union */
+  position: absolute;
+  left: 35.05%;
+  right: 58.18%;
+  top: 61.77%;
+  bottom: 34.23%;
+
+  /* Neutral / 100 */
+}
+
+.pauseText{
+  position: absolute;
+  left: 26.87%;
+  right: 50%;
+  top: 68.25%;
+  bottom: 28.73%;
+
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 24px;
+  /* or 89% */
+
+  text-align: center;
+  letter-spacing: 1.18px;
+
+  color: #000000;
+}
+
+.stopButton{
+  /* Union */
+
+  position: absolute;
+  left: 28.5%;
+  right: 28.5%;
+  top: 72.8%;
+
+}
+
+.stopText{
+  /* Create new audio file */
+
+
+  position: absolute;
+  left: 28.5%;
+  right: 28.5%;
+  top: 14%;
+  bottom: 14%;
+
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #00C9D3;
+}
+
+.pauseMic{
+  position: absolute;
+  left:15%;
+  right: 70%;
+  top: 61.88%;
+  bottom: 33.48%;
+
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1.18px;
+
+  color: #4931E8;
+
+}
+
+.recordText{
+  /* ✏️ Headline 15 */
+
+
+  position: absolute;
+  left:16%;
+  right: 70%;
+  top: 65%;
+  bottom: 28.73%;
+
+  font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 37px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #353535;
+
+}
+
+.recordAgainButton{
+  /* mic 1 */
+
+
+  position: absolute;
+  left: 55.14%;
+  right: 35.03%;
+  top: 61.88%;
+  bottom: 33.48%;
+
+
+}
+
+.uploadButton{
+  /* 2. Outlined/1. Text only */
+  box-sizing: border-box;
+  width: 68%;
+  height: 6.1%;
+  /* Auto layout */
+  
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 6px 6px 6px 8px;
+  
+  position: absolute;
+  left: 15.65%;
+  right: 15.65%;
+  top: 79.16%;
+  bottom: 14.79%;
+  
+  background:#00C9D3;
+  border-radius: 30px;
+}
+
+.uploadText{
+  /* ✏️ Headline 17 */
+
+
+  position: absolute;
+  left: 4.91%;
+  right: 4.91%;
+  top: 80.67%;
+  bottom: 16.31%;
+
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  /* or 120% */
+
+  text-align: center;
+  letter-spacing: 1.18px;
+
+  color: #FFFFFF;
+}
+
+.succesfullySavedText{
+    /* Create new audio file */
+
+
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 50%;
+    bottom: 30.78%;
+
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 37px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #353535;
+
+}
+
+
+.timer{
+    /* Create new audio file */
+
+
+  position: absolute;
+  left: 39.25%;
+  right: 39.49%;
+  top: 63%;
+  bottom: 30.78%;
+
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #969696;
+
+}
+
+.deleteFile{   
+
+  position: absolute;
+  left: 39%;
+  right: 45%;
+  top: 61.88%;
+  bottom: 33.48%;
+
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1.18px;
+
+  color: #4931E8;
+    
+}
+
+.deleteText{
+  /* ✏️ Headline 15 */
+
+
+  position: absolute;
+  left:39%;
+  right:45%;
+  top: 65%;
+  bottom: 28.73%;
+
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 37px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #353535; 
+}
+
+.recordNew{
+  position: absolute;
+  left: 70%;
+  right: 70%;
+  top: 61.88%;
+  bottom: 33.48%;
+
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1.18px;
+
+  color: #4931E8;
+}
+
+.recordNewText{
+    /* ✏️ Headline 15 */
+
+
+    position: absolute;
+    left: 60%;
+    right:10%;
+    top: 65%;
+    bottom: 28.73%;
+  
+    font-family: 'Titillium Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 37px;
+    /* identical to box height */
+  
+    text-align: center;
+  
+    color: #353535; 
+}
+
+.logoutButton{
+  position: absolute;
+  left: 86.92%;
+  right: 8.41%;
+  top: 5.4%;
+  bottom: 92.44%;
+  font-size: 25px;
+}
+
+
+.deletePopUp{
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 50%;
+  bottom: 40%;
+  background: #42D8E9;
+  border-radius: 30px;
+  box-shadow: 0px -4px 25px rgba(0, 0, 0, 0.25);
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.yes{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  right: 60%;
+  font-size: 30px;
+}
+
+.no{
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  right: 20%;
+  font-size: 30px;
+}
