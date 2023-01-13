@@ -18,7 +18,7 @@ export class requestHandler{
             console.log(filename)
             form.append('file', blob, filename);
             console.log(form)
-            const response2 = await fetch('http://186.189.135.0:5002/jobs', {
+            const response2 = await fetch('https://dev.bmslab.utwente.nl/scribe/api/v1/jobs/audio?encoding=base64', {
                 method: 'POST',
                 body: form
             })
@@ -33,7 +33,7 @@ export class requestHandler{
     }
 
     async getFileNamesServer(){
-        const response2 = await fetch('http://186.189.135.0:5002/jobs', {
+        const response2 = await fetch('https://dev.bmslab.utwente.nl/scribe/api/v1/jobs', {
             method: 'GET',
         })
         const data = await response2.json();
